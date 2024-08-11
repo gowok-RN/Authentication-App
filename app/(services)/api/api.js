@@ -3,7 +3,7 @@ import axios from "axios";
 export const registerUser = async (user) => {
   console.log(user);
   const response = await axios.post(
-    " https://purple-lines-double.loca.lt/api/users/register",
+    "https://brown-oranges-rest.loca.lt/api/users/register",
     user,
     {
       headers: {
@@ -15,7 +15,7 @@ export const registerUser = async (user) => {
 };
 export const loginUser = async (user) => {
   const response = await axios.post(
-    " https://purple-lines-double.loca.lt/api/users/login",
+    "https://brown-oranges-rest.loca.lt/api/users/login",
     user,
     {
       headers: {

@@ -40,6 +40,7 @@ const index = () => {
                 <Text className="mt-7 font-semibold">Employee List</Text>
               </Pressable>
               <Pressable
+                onPress={() => router.push("/(home)/markattendance")}
                 className="p-12 justify-center items-center flex-1"
                 style={{ backgroundColor: "#D3CCE3", borderRadius: 6 }}
               >
