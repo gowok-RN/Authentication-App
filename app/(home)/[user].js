@@ -42,7 +42,7 @@ const User = () => {
         status: attendanceStatus,
       };
       const response = await axios.post(
-        "http://10.1.51.60:8083/attendance",
+        "http://192.168.24.185:8083/attendance",
         attendanceData
       );
       if (response.status === 200) {

@@ -33,7 +33,7 @@ const addDetails = () => {
     };
     console.log("Sending employee data:", employeeData); // Add this line
     axios
-      .post("http://10.1.51.60:8083/addEmployee",employeeData)
+      .post("http://192.168.24.185:8083/addEmployee",employeeData)
       .then((response) => {
         Alert.alert(
           "Registration successful",

@@ -24,7 +24,7 @@ const markattendance = () => {
   useEffect(() => {
     const fetchEmployeeData = async () => {
       try {
-        const response = await axios.get("http://10.1.51.60:8083/employees");
+        const response = await axios.get("http://192.168.24.185:8083/employees");
 
         setEmployees(response.data);
       } catch (error) {
@@ -36,7 +36,7 @@ const markattendance = () => {
   const [attendance, setAttendance] = useState([]);
   const fetchAttendanceData = async () => {
     try {
-      const response = await axios.get(`http://10.1.51.60:8083/attendance`, {
+      const response = await axios.get(`http://192.168.24.185:8083/attendance`, {
         params: {
           date: currentDate.format("MMMM D,YYYY"),
         },
